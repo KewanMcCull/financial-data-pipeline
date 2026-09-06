@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Financial Performance Dashboard</title>
+<style>
+  body { font-family: -apple-system, Arial, sans-serif; background: #f4f6f8; margin: 0; padding: 24px; }
+  h1 { color: #1a1a2e; }
+  .kpi-row { display: flex; gap: 16px; margin-bottom: 24px; flex-wrap: wrap; }
+  .kpi-card { background: white; border-radius: 10px; padding: 16px 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.1); flex: 1; min-width: 180px; }
+  .kpi-card .label { color: #555; font-size: 13px; text-transform: uppercase; }
+  .kpi-card .value { font-size: 24px; font-weight: 700; color: #1a1a2e; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .chart-card { background: white; border-radius: 10px; padding: 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.1); }
+  .chart-card img { width: 100%; height: auto; border-radius: 6px; }
+  @media (max-width: 800px) { .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+  <h1>Financial Performance Dashboard</h1>
+  <div class="kpi-row">
+    <div class="kpi-card"><div class="label">Total Revenue</div><div class="value">$24,809,671</div></div>
+    <div class="kpi-card"><div class="label">Total Expense</div><div class="value">$12,158,311</div></div>
+    <div class="kpi-card"><div class="label">Net Income</div><div class="value">$12,651,361</div></div>
+    <div class="kpi-card"><div class="label">Departments Tracked</div><div class="value">5</div></div>
+  </div>
+  <div class="grid">
+    <div class="chart-card"><img src="charts/revenue_vs_expense.png" alt="Revenue vs Expense"></div>
+    <div class="chart-card"><img src="charts/net_income_trend.png" alt="Net Income Trend"></div>
+    <div class="chart-card"><img src="charts/dept_expense.png" alt="Expense by Department"></div>
+    <div class="chart-card"><img src="charts/budget_variance.png" alt="Budget vs Actual"></div>
+  </div>
+</body>
+</html>
